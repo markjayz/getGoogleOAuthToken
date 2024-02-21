@@ -17,5 +17,24 @@ Before running the script, ensure you have:
 ```bash
 pip install google-auth
 
-```Run
-python3 getToken.py 
+RUN
+python3 getToken.py
+
+NEW FIREBASE PUSH NOTIFICATION ENDPOINT
+https://fcm.googleapis.com/v1/projects/dev-shippingcart/messages:send
+
+SAMPLE PAYLOAD
+{
+    "message": {
+        "token":"FCM_ TOKEN",
+        "notification": {
+            "title": "TEST",
+            "body": "TEST",
+            "image": "IMAGE"
+        },
+        "data": {
+            "key1": "value1",
+            "key2": "value2"
+        }
+    }
+}
